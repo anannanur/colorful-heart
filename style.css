@@ -42,7 +42,7 @@ section {
 .loader span {
     position: absolute;
     top: 0;
-    left: -200px;
+    left: -150px;
     width: 250px;
     transform-origin: right;
     transform: rotate(calc(18deg * var(--i)));
