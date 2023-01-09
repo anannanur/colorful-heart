@@ -12,7 +12,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background-color: black; */
+    /* background-color: rgb(5, 5, 5); */
     background-color: #210404;
     min-height: 100vh;
     animation: animateBgColor 10s linear infinite;
@@ -42,8 +42,10 @@ section {
 .loader span {
     position: absolute;
     top: 0;
-    left: -150px;
-    width: 250px;
+    left: -120px;
+    width: 200px;
+    /* height: 2px;
+    background-color: #00b3ff; */
     transform-origin: right;
     transform: rotate(calc(18deg * var(--i)));
 }
@@ -52,14 +54,16 @@ section {
     position: absolute;
     content: '';
     left: 0;
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
     background-color: #ff1500;
     /* background-color:#00ff0a; */
-    border-radius: 50%;
+    /* border-radius: 50%; */
     animation: animateheart 2s linear infinite;
     animation-delay: calc(-.1s * var(--i));
-    box-shadow: 0 0 10px #ff1500, 0 0 20px #ff1500, 0 0 40px #ff1500, 0 0 60px #ff1500, 0 0 80px #ff1500, 0 0 100px #ff1500;
+    box-shadow: 0 0 5px #ff1500;
+    /* 0 0 20px #ff1500; */
+     /* 0 0 40px #ff1500, 0 0 60px #ff1500, 0 0 80px #ff1500, 0 0 100px #ff1500; */
 }
 
 @keyframes animateheart{
@@ -67,7 +71,7 @@ section {
         transform: translateX(0) scale(.5);
     }
     50%{
-        transform: translateX(250px) scale(1);
+        transform: translateX(200px) scale(1);
     }
     100%{
         transform: translateX(0) scale(.5);
@@ -75,7 +79,7 @@ section {
 }
 p{
     color: #111;
-    font-size: 36px;
+    font-size: 30px;
     margin: 0;
     padding: 0;
     font-weight: bold;
@@ -140,9 +144,9 @@ p span:nth-child(16){
     0%,100%{
         color: #00b3ff;
         filter: blur(2px);
-        text-shadow: 0 0 10px #00b3ff,
-         0 0 20px #00b3ff,
-         0 0 40px #00b3ff
+        text-shadow: 0 0 10px #00b3ff;
+         /* 0 0 20px #00b3ff,
+         0 0 40px #00b3ff; */
          /* 0 0 80px #00b3ff,
          0 0 120px #00b3ff */
          /* 0 0 200px #00b3ff,
